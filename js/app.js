@@ -1,7 +1,5 @@
-const textArea=document.querySelector(".text-area");
-const mensaje =document.querySelector(".mensaje");
-
-
+const textArea = document.querySelector(".text-area");
+const mensaje = document.querySelector(".mensaje");
 
 // La letra "e" es convertida para "enter"
 // La letra "i" es convertida para "imes"
@@ -11,37 +9,39 @@ const mensaje =document.querySelector(".mensaje");
 
 let matrizCodigo
 
-Fuction Encriptar(StringEncriptada){
+function btnEncriptar(StringEncriptada){
 
-}
-const textEncriptado =encriptar(textArea.value)
-mensaje.value = textEncriptado.textArea
-textArea.value="";
-mensaje.StylebackgroundImage="none"
+  const textEncriptado = encriptar(textArea.value)
+  mensaje.value = textEncriptado.textArea
+  textArea.value = "";
+  mensaje.StylebackgroundImage = "none"
 
-  console.table (matrizCodigo)=[["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
-StringEncriptada=StringEncriptada.tolowerCase()
+  console.table (matrizCodigo) = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
+  StringEncriptada = StringEncriptada.tolowerCase()
 
 
-for(let i=0; i <matrizCodigo.length; i++){
+  for(let i = 0; i <matrizCodigo.length; i++){
     if (StringEncriptada.includes(matrizCodigo{i}{0})){
-        StringEncriptada=StringEncriptada.ReplaceAll
-
+      StringEncriptada=StringEncriptada.ReplaceAll
     }
+  }
+  return StringEncriptada
 }
-return StringEncriptada
 
-Fuction btnDesncriptar(){}
-const textEncriptado =Desencriptar(textArea.value)
-mensaje.value = textdesencriptado
-textArea.value="";
-mensaje.StylebackgroundImage="none"
+function btnDesencriptar(){
+  const textEncriptado = Desencriptar(textArea.value)
+  mensaje.value = textdesencriptado
+  textArea.value = "";
+  mensaje.StylebackgroundImage = "none"
 
-  console.table (matrizCodigo)=[["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u"."ufat"]];
+  console.table (matrizCodigo) = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
   console.table (matrizCodigo)
 
-StringDesncriptada= StringDesencriptada.tolowerCase()
+  StringDesncriptada = StringDesencriptada.tolowerCase()
 
-for(let i=0;i<matrizCodigo.length;i++){
+  for(let i=0;i<matrizCodigo.length;i++){
     if (StringEncriptada.includes(matrizCodigo{i}{0})){
-        StringEncriptada=StringDesencriptada.ReplaceAll
+      StringEncriptada=StringDesencriptada.ReplaceAll
+    }
+  }
+}
